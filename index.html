@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header id="header">
-            <img id="header-img" src="images/logo HC.jpg" alt="logo Handcrafted Cakes">
-            <nav id="nav-bar">
+    <header>
+      <div class="container">
+        <div class="header">
+<img class="header-img" src="images/logo HC.jpg" alt="logo Handcrafted Cakes">
+            <nav class="nav-bar">
                 <ul class="menu">
                   <li>
                     <a class="nav-link" href="#advantages">About our cakes</a>
@@ -19,18 +21,21 @@
                     <a class="nav-link" href="#order_a_cake">Сakes</a>
                 </li>
                 </ul>
-              </nav>          
+              </nav>  
+        </div>
+           
+      </div>           
     </header>
     <main>
-      <section>
+      <section class="container">
         <h1>Delight in Every Bite <br>
             Handcrafted Cakes for Every Occasion</h1>
-        <form id="form" action="https://www.freecodecamp.com/email-submit" autocomplete="off/on" novalidate>
-        <input type="email" id="email" name="email" placeholder="Enter your email address">
+        <form class="form" action="https://www.freecodecamp.com/email-submit" autocomplete="off/on" novalidate>
+        <input type="email" class="email" name="email" placeholder="Enter your email address">
         <input class="button" type="submit" id="submit" value="Click">
         <!-- <button class="button" type="submit">Click</button> -->
       </section>
-      <section id="advantages">
+      <section class="advantages container">
         <h2>From birthdays to weddings - <br> our cakes make your moments unforgettable</h2>
         <article>
             <h3>Fresh Ingredients</h3>
@@ -43,41 +48,47 @@
             <p>Want something special? We create custom cakes tailored to your celebration.</p>
         </article>
       </section>
-      <section>
+      <section class="container">
         <h2>Watch How We Bake Magic</h2>
         <div class="video">
             <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/uH6oC5bcpho?si=83MQQ8eQpr_R9leS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </section>
-      <section id="order_a_cake">
+      <section class="order_a_cake container">
         <h2>Choose your best cake</h2>
       <ul class="formats-list">
         <li>
         <article class="cart">
             <img src="images/Classic Cakes.jpg" alt="Foto_Classic_Cakes">
+           <div class="cart-text">
             <h3>Classic Cakes</h3> 
             <p>From $30</p>
             <p>Perfect for small celebrations and everyday joy.</p>
             <p>Flavors: Chocolate, Vanilla, Red Velvet</p>
+          </div>
                 <button class="button-cart" type="submit">Add to shopping cart</button>
         </article>
     </li>
         <li>
         <article class="cart">
             <img src="images/Signature Cakes.jpg" alt="Foto_Signature_Cakes">
-            <h3>Signature Cakes</h3>
+            <div class="cart-text">
+               <h3>Signature Cakes</h3>
             <p>From $60</p>
             <p>Elevate your party with our signature flavors and layered designs.</p>
             <p>Flavors: Strawberry Cream, Mocha Delight, Lemon Zest</p>
+            </div>
             <button class="button-cart" type="submit">Add to shopping cart</button>
         </article>
     </li>
         <li><article class="cart">
             <img src="images/Custom Cakes.jpg" alt="Foto_Custom_Cakes">
-            <h3>Custom Cakes</h3>
+            <div class="cart-text">
+              <h3>Custom Cakes</h3>
             <p>From $90</p>
             <p>Your idea, our creation.</p>
             <p>Fully personalized design and flavor.</p>
+            </div>
             <button class="button-cart" type="submit">Add to shopping cart</button>
         </article>
     </li>
