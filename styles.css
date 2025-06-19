@@ -1,3 +1,13 @@
+/* Base */
+
+* {
+    box-sizing: border-box;
+} 
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
 body {
     font-family: 'Inter', serif;
     font-size: 20px;
@@ -11,20 +21,26 @@ ul {
         list-style-type: none;
     }
 
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+/* Header */
 .menu {
     display: flex;
     gap: 48px;
     margin: 48px;
 }
 
-#header {
+.header {
     display: flex;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: #EDEBF7;
+    padding: 20px;
+   
 }
-
 
 .nav-link {
     font-size: 24px;
@@ -59,20 +75,20 @@ h3 {
     text-align: center;
 }
 
-#header-img {
+.header-img {
     width: 100px;
     height: 100px;
     margin: 20px;
 }
 
-#form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 18px;
 }
 
-#email {
+.email {
     width: 320px;
     height: 56px;
     border-radius: 8px;
@@ -92,7 +108,7 @@ h3 {
     font-size: 16px;
 }
 
-#advantages {
+.advantages {
     text-align: center;
 }
 
@@ -103,19 +119,27 @@ h3 {
 
 .formats-list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
+    padding: 0;
 }
 
 .cart {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     height: 688px;
     width: 394px;
     padding: 24px;
     border: 2px solid #3C2769;
     text-align: center;
+}
+
+.cart-text {
+    height: 360px;
+    width: 360px;
+    padding: 20px;
 }
 
 .text-end {
@@ -136,7 +160,7 @@ h3 {
     margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .formats-list {
         flex-direction: column;
     }
