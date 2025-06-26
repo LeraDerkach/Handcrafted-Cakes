@@ -161,7 +161,14 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .formats-list {
-        flex-direction: column;
+    body {
+        background-color: #f3d1e8;
+    }
+    .container {
+        padding: 0;
+    }
+
+.nav-bar {
+        display: none;
     }
 }
