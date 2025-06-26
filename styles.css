@@ -39,7 +39,6 @@ ul {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-   
 }
 
 .nav-link {
@@ -108,6 +107,11 @@ h3 {
     font-size: 16px;
 }
 
+.header-button {
+    display: none;
+    
+}
+
 .advantages {
     text-align: center;
 }
@@ -163,12 +167,53 @@ h3 {
 @media (max-width: 768px) {
     body {
         background-color: #f3d1e8;
+    font-size: 18px;
+    line-height: 1;
     }
+
+    h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+    .header-img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .header-button {
+    display: block;
+    width: 122px;
+    height: 48px;
+    border-radius: 64px;
+    background-color: #3C2769;
+    border: 2px solid black;
+    color: #EDEBF7;
+    font-size: 16px;
+}
+
     .container {
-        padding: 0;
+        padding: 8px;
     }
 
 .nav-bar {
         display: none;
     }
+
+    .cart {
+    height: 588px;
+    width: 294px;
+    }
+
+    .cart-text {
+    width: 100%;
+}
 }
