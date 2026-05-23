@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--color-menu);
+
+    &-menu {
+        width: 25%;
+        text-align: center;
+        align-items: center;
+
+        & h3 {
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+    }
+
+    &-social {
+        @include flex;
+        gap: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        &-menu {
+        width: 100%  
+    }
+    &-menu h3 {
+        text-transform: uppercase;
+    }
+}
+}
+
+    
