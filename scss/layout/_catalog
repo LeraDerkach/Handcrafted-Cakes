@@ -1,0 +1,37 @@
+.catalog {
+    @include flex;
+    gap: 24px;
+    text-align: center;
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 4px;
+    }
+
+&-cart {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 20px;
+    border: 2px solid var(--text-color);
+    text-align: center;
+}
+
+&-text {
+    height: 300px;
+    padding: 20px;
+}
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+
+        &-text {
+            height: auto;
+        }
+    }
+}
