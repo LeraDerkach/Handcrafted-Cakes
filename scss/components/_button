@@ -1,0 +1,55 @@
+.button {
+    width: auto;
+    padding: 16px;
+    border-radius: 16px;
+    border: 2px solid black;
+    color: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(
+    90deg,
+    #ff6b6b,
+    #6c5ce7,
+    #00cec9,
+    #ff6b6b
+  );
+  background-size: 300%;
+  transition: 0.5s;
+
+  &:hover {
+    background-position: right;
+  }
+
+  &-menu {
+    position: relative;
+  }
+
+  &-lang {
+    width: auto;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    color: var(--text-color);
+    background-color: var(--color-menu);
+    font-size: 16px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      @include hover;
+    }
+
+  }
+
+  &-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+}
