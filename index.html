@@ -1,101 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handcrafted Cakes</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-      <div class="container">
-        <div class="header">
-<img class="header-img" src="images/logo HC.jpg" alt="logo Handcrafted Cakes">
-            <nav class="nav-bar">
-                <ul class="menu">
-                  <li>
-                    <a class="nav-link" href="#advantages">About our cakes</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="#video">How a cake is made</a>
+        <div class="container header">
+        <img class="logo" src="images/logo HC.jpg" alt="logo Handcrafted Cakes">
+        <div class="header-nav">
+        <nav>
+            <ul class="header-top">
+                <li>
+                    <svg class="icon icon-phone" width="20" height="20"><use href="/images/icons.svg#icon-phone"></use></svg>
+                    <a href="tel:+380798855444">0798855444</a>
                 </li>
-                  <li>
-                    <a class="nav-link" href="#order_a_cake">Сakes</a>
-                </li>
-                </ul>
-              </nav>  
-              <button class="header-button" type="submit">Menu</button>
+                <li><a href="/index-add.html" target="_blank">About the company</a></li>
+                <li><a href="#video">How a cake is made</a></li>
+            </ul>   
+        </nav>
+
+        <div class="header-bottom">
+        <div class="button-menu">
+        <button class="button-lang">EN</button>
+        <ul class="button-list">
+        <!-- <li><a href="index.html"></a>EN</li> -->
+        <li><a href="index-add.html"></a>FR</li>
+        <li><a href="index-add.html"></a>DE</li>
+        </ul>
+    </div>
+            
+        <button class="button">Collaboration</button> <!--  при натисканні - модальне вікно для зворотнього взязку -->
+        
+         <a href="index-add.html" target="_blank"><svg class="icon icon-basket" width="30" height="30"><use href="/images/icons.svg#icon-basket"></use></svg></a> 
+         <!-- зробити перехід на кошик -->
         </div>
-      </div>
+
+        <!-- mobil-menu -->
+         <!-- <div>
+            <svg class="icon icon-menu" width="30" height="30"><use href="/images/icons.svg#icon-menu"></use></svg>
+         </div> -->
+
+        </div>
+        </div>
     </header>
     <main>
-      <section class="container">
-        <h1>Delight in Every Bite <br>
+        <div class="container">
+        <div class="main-banner-top"> 
+         <h1>Delight in Every Bite <br>
             Handcrafted Cakes for Every Occasion</h1>
-        <form class="form" action="https://leraderkach.github.io/HTML-CSS_portfolio/index-fr.html#contact" autocomplete="off/on" novalidate>
-        <input type="email" class="email" name="email" placeholder="Enter your email address">
-        <input class="button" type="submit" id="submit" value="Click">
-      </section>
-      <section class="advantages container">
-        <h2>From birthdays to weddings - <br> our cakes make your moments unforgettable</h2>
-        <article>
-            <h3>Fresh Ingredients</h3>
-            <p>We bake with real butter, fresh cream, and natural flavors — no shortcuts.</p>
+            </div>
+
+        <section class="main-section-top">
+            <h2>We offer you</h2>
+            <div class="main-menu">
+            <article class="main-circle picture-circle-1">
+                <div class="main-text">
+                <h3>Cookies</h3>
+                <span>What you want</span>
+                <h4>Crispy and soft, in chocolate or filled</h4>
+                <button class="button">Order</button>
+                </div>
             </article>
-        <article><h3>Artisan Craftsmanship</h3>
-            <p>Every cake is designed and decorated by passionate cake artists with years of experience.</p>
-        </article>
-        <article><h3>Custom Designs</h3>
-            <p>Want something special? We create custom cakes tailored to your celebration.</p>
-        </article>
-      </section>
-      <section class="container">
-        <h2>Watch How We Bake Magic</h2>
+            <article class="main-circle picture-circle-2">
+                <div class="main-text">
+                <h3>Cakes</h3> 
+                <span>A holiday available every day</span>
+                <h4>Because life is an excuse</h4>
+                <button class="button">Order</button>
+                </div>
+            </article>
+            <article class="main-circle picture-circle-3">
+                <div class="main-text">
+                <h3>Sweets</h3>
+                <span>From the heart</span>
+                <h4>What you want to share</h4>
+                <button class="button">Order</button>
+                </div>
+            </article>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h2>Watch How We Bake Magic</h2>
         <div class="video">
             <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/uH6oC5bcpho?si=83MQQ8eQpr_R9leS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-      </section>
-      <section class="order_a_cake container">
-        <h2>Choose your best cake</h2>
-      <ul class="formats-list">
-        <li>
-        <article class="cart">
+        </section> 
+
+        <section class="main-section">
+            <h2>Choose your best cake</h2>
+            <!-- <div>
+                <svg class="icon icon-circle-left" width="30" height="30"><use href="/images/icons.svg#icon-circle-left"></use></svg>
+                <svg class="icon icon-circle-right" width="30" height="30"><use href="/images/icons.svg#icon-circle-right"></use></svg>
+            </div> -->
+
+            <div class="catalog">
+
+        <article class="catalog-cart">
             <img src="images/Classic Cakes.jpg" alt="Foto_Classic_Cakes">
-           <div class="cart-text">
+           <div class="catalog-text">
             <h3>Classic Cakes</h3> 
             <p>From $30</p>
             <p>Perfect for small celebrations and everyday joy.</p>
             <p>Flavors: Chocolate, Vanilla, Red Velvet</p>
           </div>
-                <button class="button-cart" type="submit">Add to shopping cart</button>
+                <button class="button" type="submit">Add to shopping cart</button>
         </article>
-    </li>
-        <li>
-        <article class="cart">
+  
+        
+        <article class="catalog-cart">
             <img src="images/Signature Cakes.jpg" alt="Foto_Signature_Cakes">
-            <div class="cart-text">
+            <div class="catalog-text">
                <h3>Signature Cakes</h3>
             <p>From $60</p>
             <p>Elevate your party with our signature flavors and layered designs.</p>
             <p>Flavors: Strawberry Cream, Mocha Delight, Lemon Zest</p>
             </div>
-            <button class="button-cart" type="submit">Add to shopping cart</button>
+            <button class="button" type="submit">Add to shopping cart</button>
         </article>
-    </li>
-        <li><article class="cart">
+    
+        <article class="catalog-cart">
             <img src="images/Custom Cakes.jpg" alt="Foto_Custom_Cakes">
-            <div class="cart-text">
+            <div class="catalog-text">
               <h3>Custom Cakes</h3>
             <p>From $90</p>
             <p>Your idea, our creation.</p>
             <p>Fully personalized design and flavor.</p>
             </div>
-            <button class="button-cart" type="submit">Add to shopping cart</button>
+            <button class="button" type="submit">Add to shopping cart</button>
         </article>
-    </li>
-      </ul>
-      <p class="text-end">Ready to Taste Happiness?
-        Order your dream cake today!</p>
-      </section>
+        </div>
+        </section>
+
+        <section class="main-section">
+            <h2>Something new for you</h2>
+            <div class="catalog">
+        <article class="picture-catalog-1">
+            <h3>Fresh Ingredients</h3>
+            <p>We bake with real butter, fresh cream, and natural flavors — no shortcuts.</p>
+            </article>
+            <div class="catalog-block">
+                <article class="picture-catalog-2">
+            <h3>Artisan Craftsmanship</h3>
+            <p>Every cake is designed and decorated by passionate cake artists with years of experience.</p>
+        </article>
+        <article class="picture-catalog-3">
+            <h3>Custom Designs</h3>
+            <p>Want something special? We create custom cakes tailored to your celebration.</p>
+        </article>
+            </div>
+        
+        </div>
+        </section>
+
+        <section class="main-banner-bottom">
+            <img src="" alt="">
+            <h2>To order</h2>
+            <span>The holiday doesn't have to wait</span>
+            <p>The holiday should be created</p>
+            <button class="button">Write to us</button> 
+            <!-- модальне вікно з формою -->
+        </section>
+        </div>
     </main>
-  </body>
+    <footer class="container">     
+         <div class="footer">
+            <nav class="footer-menu">
+            <h3>About the company</h3>
+            <ul>
+                <li><a href="">About us</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Reviews and suggestions</a></li>
+                <li><a href="">Payment & Shipping</a></li>
+            </ul>
+            </nav>
+            
+            <nav class="footer-menu">
+                <h3>Products</h3>
+            <ul>
+                <li><a href="">Cakes</a></li>
+                <li><a href="">Sweets</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">To order</a></li>
+            </ul>
+            </nav>
+            <div class="footer-menu">
+                <h3>Office contacts</h3>
+                <ul>
+                    <li><a href="tel:+380798855444">0798855444</a></li>
+                    <li><a href="mailto:cakes@gmail.com">cakes@gmail.com</a></li>
+                    <li><a href="https://maps.app.goo.gl/YSA24pEStjdYo1BZ8" target="_blank">Ukraine, Kyiv, st. Armenska, 4</a></li>
+                </ul>
+            </div>
+         <div class="footer-menu"> <!-- не видно картинки -->
+            <h3>We love your photos with our cakes</h3>
+            <p>Join us</p>
+            <div class="footer-social">
+            <a href="#"><svg class="icon icon-telegram" target="_blank" width="30" height="30"><use xlink:href="/images/icons.svg#icon-telegram"></use></svg></a>
+            <a href="#"><svg class="icon icon-instagram" target="_blank" width="30" height="30"><use href="/images/icons.svg#icon-instagram"></use></svg></a>
+            <a href="#"><svg class="icon icon-facebook2" target="_blank" width="30" height="30"><use href="/images/icons.svg#icon-facebook2"></use></svg></a>  
+            <a href="#"><svg class="icon icon-youtube" target="_blank" width="30" height="30"><use href="/images/icons.svg#icon-youtube"></use></svg></a>
+            </div>
+        </div>
+        </div> 
+    </footer> 
+    <script src="js/main.js"></script>
+</body>
+</html>
