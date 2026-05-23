@@ -1,0 +1,19 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: text-top;
+  fill: var(--text-color);
+
+  &-basket:hover {
+      @include hover;
+    }
+}
+
+    
+
+
+

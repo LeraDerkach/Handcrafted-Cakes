@@ -1,0 +1,57 @@
+.picture {
+    &-circle-1,
+    &-circle-2,
+    &-circle-3 {
+        @include background; 
+       color: var(--color-light);
+       position: relative;
+
+     h3 {
+        color: var(--color-light);
+    }
+    }
+
+    &-circle-1 {
+        background-image: url(/images/Cookies.jpg);
+    }
+
+    &-circle-2 {
+        background-image: url(/images/Cakes.jpg);
+
+    }
+
+    &-circle-3 {
+        background-image: url(/images/Sweets.jpg);
+    }
+
+    &-catalog-1,
+    &-catalog-2,
+    &-catalog-3  {
+        @include background; 
+        color: black;
+        text-shadow:
+  1px 1px 2px var(--color-light),
+  0 0 1em #9d94b0,
+  0 0 0.2em var(--color-dark);
+
+  p {
+    padding-bottom: 10px;
+  }
+    }
+
+    &-catalog-1 {
+        background-image: url(/images/Fresh\ Ingredients.jpg);
+        padding: 40px;
+    }
+
+    &-catalog-2 {
+        background-image: url(/images/Artisan\ Craftsmanship.jpg);
+        padding: 20px;
+    }
+
+    &-catalog-3 {
+        background-image: url(/images/Custom\ Designs.jpg);
+        padding: 20px;
+    }
+}
+
