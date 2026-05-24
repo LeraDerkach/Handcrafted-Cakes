@@ -162,13 +162,13 @@ h3 {
   color: var(--color-light);
 }
 .picture-circle-1 {
-  background-image: url(/images/Cookies.jpg);
+  background-image: url(../images/Cookies.jpg);
 }
 .picture-circle-2 {
-  background-image: url(/images/Cakes.jpg);
+  background-image: url(../images/Cakes.jpg);
 }
 .picture-circle-3 {
-  background-image: url(/images/Sweets.jpg);
+  background-image: url(../images/Sweets.jpg);
 }
 .picture-catalog-1, .picture-catalog-2, .picture-catalog-3 {
   background-size: cover;
@@ -181,15 +181,15 @@ h3 {
   padding-bottom: 10px;
 }
 .picture-catalog-1 {
-  background-image: url(/images/Fresh\ Ingredients.jpg);
+  background-image: url(../images/Fresh\ Ingredients.jpg);
   padding: 40px;
 }
 .picture-catalog-2 {
-  background-image: url(/images/Artisan\ Craftsmanship.jpg);
+  background-image: url(../images/Artisan\ Craftsmanship.jpg);
   padding: 20px;
 }
 .picture-catalog-3 {
-  background-image: url(/images/Custom\ Designs.jpg);
+  background-image: url(../images/Custom\ Designs.jpg);
   padding: 20px;
 }
 
@@ -321,7 +321,7 @@ h3 {
 .main-banner-top {
   width: 100%;
   height: 400px;
-  background-image: url("/images/Сupcakes.jpg");
+  background-image: url("../images/Сupcakes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
